@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	display: grid;
+	place-items: center;
+	margin: 0;
+	padding: 0 32px;
+	background-image: url("1260991.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Ubuntu";
+	animation: rotate 6s infinite alternate linear;
+}
+
+
+.card{
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	margin: 0 20px;
+	padding: 160px 30px 38px;
+	border-radius: 1.25rem;
+	background: #FFFACD;
+	text-align: center;
+	box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card::before{
+	content: "";
+	position: absolute;
+	background: #B22222;
+	top: -880px;
+	left: 50%;
+	width: 1000px;
+	height: 1000px;
+	border-radius: 50%;
+	translate: -50% 0;
+}
+
+.card .logo{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #FFFACD;
+	height: 64px;
+	width: 64px;
+	top: 30px;
+	left: 50%;
+	translate: -50%;	
+}
+
+.card>h2{
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0 0 30px;
+	color: #B22222;
+}
+
+.form{
+	margin: 0 0 30px;
+	display: grid;
+	gap: 18px;
+}
+
+.form>input, .form>button{
+	width: 100%;
+	height: 50px;
+	border-radius: 28px;
+}
+
+.form>input{
+	border: 2px solid #FFFACD;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 0 24px;
+	color: #B22222;
+	transition: all 0.375s;
+}
+
+.form>input:hover{
+	border: 2px solid #D2691E;
+}
+
+.form>input::placeholder{
+	color: #D2691E;
+}
+
+.form>button{
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+	padding: 0 16px;
+	background: #B22222;
+	color: #fff;
+	border: 0;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	text-align: 2px;
+	letter-spacing: 2px;
+	transition: all 0.375s;
+}
+
+.form>button:hover{
+	background: #B22222;
+	color: #FFFACD;
+}
+
+.form>footer{
+	color: #FAFAD2;
+}
+
+.form>footer>a{
+	color: #FF4500;
+	transition: all 0.375s;
+}
+
+.form>footer>a:hover{
+	color: #B22222;
+}
+
+@media (width >=500px) {
+	body{
+		padding: 0;
+	}
+	.card{
+		margin: 0;
+		width: 360px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
